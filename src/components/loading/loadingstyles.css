@@ -1,0 +1,9 @@
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+.fetchingText {
+    color: black;
+    font-size: 24px;
+}
