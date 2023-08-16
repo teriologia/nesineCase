@@ -1,0 +1,48 @@
+.list {
+    flex-grow: 1;
+    padding-bottom: 20px;
+}
+
+.headerContainer {
+    display: flex;
+}
+
+body, #root, #tableContainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+.titleCell {
+    padding: 20px 50px;
+    flex-grow: 1;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.commentsCell{
+    flex-grow: 0.3;
+    padding: 20px 30px;
+    border-right: 1px solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid;
+}
+
+.optionsCells{
+    flex-grow: 0.2;
+    padding: 20px 30px;
+    border-right: 1px solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid;
+}
