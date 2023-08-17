@@ -1,9 +1,10 @@
 import * as React from "react";
 import { betDataType } from "../../types";
-import { Virtuoso } from "react-virtuoso";
+import { TableVirtuoso } from "react-virtuoso";
 
 import "./tablestyles.css";
 import TableHeader from "./tableHeader";
+import Cells from "./tableCells";
 
 interface TableProps {
   data: [betDataType] | [];
@@ -14,12 +15,12 @@ const Table = (props: TableProps) => {
   console.log(data);
   return (
     <div id="tableContainer">
-      <Virtuoso
+      <TableVirtuoso
         className="list"
         totalCount={data.length}
-        itemContent={(index) => <p>item {index}</p>}
+        itemContent={(index) => <Cells index={index} data={data} />}
         overscan={3}
-        components={{ Header: () => <TableHeader length={data.length} /> }}
+        fixedHeaderContent={() => <TableHeader length={data.length} />}
       />
     </div>
   );

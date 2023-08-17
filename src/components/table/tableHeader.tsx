@@ -1,71 +1,33 @@
-import * as React from 'react';
+import * as React from "react";
 
 interface TableHeaderProps {
-    length: number
+  length: number;
 }
 
 const TableHeader = (props: TableHeaderProps) => {
-    const {length} = props
+  const { length } = props;
   return (
-    <div className='headerContainer'>
-        <div className='titleCell'>
-            {`Event Count: ${length}`}
-        </div>
-        <div className='commentsCell'>
-            {`Yorumlar`}
-        </div>
-        <div className='optionsCells'>
-            {``}
-        </div>
-        <div className='optionsCells'>
-            {`1`}
-        </div>
-        <div className='optionsCells'>
-            {`x`}
-        </div>
-        <div className='optionsCells'>
-            {`2`}
-        </div>
-        <div className='optionsCells'>
-            {`Alt`}
-        </div>
-        <div className='optionsCells'>
-            {`Üst`}
-        </div>
-        <div className='optionsCells'>
-            {`H1`}
-        </div>
-        <div className='optionsCells'>
-            {`1`}
-        </div>
-        <div className='optionsCells'>
-            {`x`}
-        </div>
-        <div className='optionsCells'>
-            {`2`}
-        </div>
-        <div className='optionsCells'>
-            {`H2`}
-        </div>
-        <div className='optionsCells'>
-            {`1-X`}
-        </div>
-        <div className='optionsCells'>
-            {`1-2`}
-        </div>
-        <div className='optionsCells'>
-            {`X-2`}
-        </div>
-        <div className='optionsCells'>
-            {`Var`}
-        </div>
-        <div className='optionsCells'>
-            {`Yok`}
-        </div>
-        <div className='optionsCells'>
-            {`+99`}
-        </div>
-    </div>
+    <tr className="headerContainer">
+      <td className="titleCell">{`Event Count: ${length}`}</td>
+      <td className="commentsCell">{`Yorumlar`}</td>
+      <td className="optionsCells">{``}</td>
+      <td className="optionsCells">{`1`}</td>
+      <td className="optionsCells">{`x`}</td>
+      <td className="optionsCells">{`2`}</td>
+      <td className="optionsCells">{`Alt`}</td>
+      <td className="optionsCells">{`Üst`}</td>
+      <td className="optionsCells">{`H1`}</td>
+      <td className="optionsCells">{`1`}</td>
+      <td className="optionsCells">{`x`}</td>
+      <td className="optionsCells">{`2`}</td>
+      <td className="optionsCells">{`H2`}</td>
+      <td className="optionsCells">{`1-X`}</td>
+      <td className="optionsCells">{`1-2`}</td>
+      <td className="optionsCells">{`X-2`}</td>
+      <td className="optionsCells">{`Var`}</td>
+      <td className="optionsCells">{`Yok`}</td>
+      <td className="optionsCells">{`+99`}</td>
+    </tr>
   );
 };
 

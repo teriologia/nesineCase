@@ -1,21 +1,41 @@
 .list {
     flex-grow: 1;
     padding-bottom: 20px;
+    width: 100%;
+}
+
+.list > div > table {
+    display: flex;
+    flex-direction: column;
+}
+
+.list > div > table > tbody {
+    display: flex;
+    flex-direction: column;
 }
 
 .headerContainer {
     display: flex;
+    position: sticky;
+    top: 0;
+    flex: 1;
+    width: max-content;
+    background-color: #d1d1d1;
+    min-height: 80px;
+}
+
+.headerContainer > div {
+    font-size: 20px;
 }
 
 body, #root, #tableContainer{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-  }
+}
 
 .titleCell {
-    padding: 20px 50px;
-    flex-grow: 1;
+    min-width: 375px;
     border-right: 1px solid;
     border-bottom: 1px solid;
     text-align: center;
@@ -26,8 +46,7 @@ body, #root, #tableContainer{
 }
 
 .commentsCell{
-    flex-grow: 0.3;
-    padding: 20px 30px;
+    padding: 0px 30px;
     border-right: 1px solid;
     text-align: center;
     display: flex;
@@ -37,12 +56,89 @@ body, #root, #tableContainer{
 }
 
 .optionsCells{
-    flex-grow: 0.2;
-    padding: 20px 30px;
+    min-width: 20px;
+    padding: 0px 30px;
     border-right: 1px solid;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid;
+}
+
+.rowContainer{
+    display: flex;
+    flex-direction: row;
+    min-height: 35px;
+}
+
+.contentRow{
+    display: flex;
+    flex-direction: row;
+    min-height: 80px;
+}
+
+.contentCells {
+    border-right: 1px solid;
+    text-align: center;
+    border-bottom: 1px solid;
+    min-width: 80px;
+}
+
+.rowContainer > div {
+    font-size: 12px;
+}
+
+.contentContainer {
+    display: flex;
+    width: max-content;
+    flex:1;
+}
+
+.infoRow {
+    min-width: 376px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+    min-width: 377px;
+}
+.title {
+    border-bottom: 1px solid;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+}
+
+.innerTitle{
+    padding-left: 30px;
+}
+
+.no-border{
+    border-bottom: none;
+}
+
+.midCellsContainer {
+    min-width: 123px;
+    border-right: 1px solid;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid;
+}
+
+.smallCellsContainer {
+    min-width: 80px;
+    border-right: 1px solid;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     border-bottom: 1px solid;
 }

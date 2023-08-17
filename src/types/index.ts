@@ -46,7 +46,7 @@ export type OCG = {
     MBS: string;
     SO: string;
     OC: {
-      "0": {
+      "3": {
         G: string;
         ID: string;
         IMF: Boolean;
@@ -55,7 +55,16 @@ export type OCG = {
         O: string;
         OD: Number;
       };
-      "1": {
+      "4": {
+        G: string;
+        ID: string;
+        IMF: Boolean;
+        MBS: string;
+        N: string;
+        O: string;
+        OD: Number;
+      };
+      "5": {
         G: string;
         ID: string;
         IMF: Boolean;
@@ -72,7 +81,7 @@ export type OCG = {
     MBS: string;
     SO: string;
     OC: {
-      "0": {
+      "25": {
         G: string;
         ID: string;
         IMF: Boolean;
@@ -81,7 +90,7 @@ export type OCG = {
         O: string;
         OD: Number;
       };
-      "1": {
+      "26": {
         G: string;
         ID: string;
         IMF: Boolean;

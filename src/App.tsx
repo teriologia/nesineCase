@@ -9,7 +9,7 @@ function App() {
   const [betData, setBetData] = useState<[betDataType] | []>([]);
   const [loading, setLoading] = useState<boolean>(false);
   useEffect(() => {
-    if(betData.length > 0){
+    if (betData.length > 0) {
       return;
     }
     const getData = async () => {
@@ -26,7 +26,7 @@ function App() {
   });
   return (
     <>
-    {loading ? <Loading /> : null}
+      {loading ? <Loading /> : null}
       {betData && <Table data={betData} />}
     </>
   );
