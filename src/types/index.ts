@@ -102,3 +102,5 @@ export type OCG = {
     };
   };
 };
+
+export type selectedItem = '1'|'x'|'alt'|'ust'|'1x'|'1-2'|'x2'|'99';

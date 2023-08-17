@@ -5,6 +5,8 @@ import { TableVirtuoso } from "react-virtuoso";
 import "./tablestyles.css";
 import TableHeader from "./tableHeader";
 import Cells from "./tableCells";
+import { BasketContext } from "../../context/basketContext";
+import BasketModal from "../basket/basketModal";
 
 interface TableProps {
   data: [betDataType] | [];
@@ -12,7 +14,6 @@ interface TableProps {
 
 const Table = (props: TableProps) => {
   const { data } = props;
-  console.log(data);
   return (
     <div id="tableContainer">
       <TableVirtuoso
@@ -22,6 +23,7 @@ const Table = (props: TableProps) => {
         overscan={3}
         fixedHeaderContent={() => <TableHeader length={data.length} />}
       />
+      <BasketModal />
     </div>
   );
 };
